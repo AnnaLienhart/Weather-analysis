@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: black;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: grey;
+    border: grey;
+}
+
+.btn:hover{
+    background-color: darkgrey;
+}
+
+#completion{
+    color: white;
+    background-color: grey;
+    border: grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#completion:hover{
+    background-color: darkgrey;
+}

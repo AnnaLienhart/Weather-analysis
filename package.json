@@ -1,0 +1,16 @@
+{
+  "name": "weather-analysis",
+  "version": "1.0.0",
+  "description": "weather-analysis with parameters",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AL",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0"
+  }
+}

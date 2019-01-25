@@ -1,0 +1,545 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Weather analysis",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Humidity"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Precipitation"
+    },
+    {
+      "name": "Temperature"
+    },
+    {
+      "name": "Wind"
+    }
+  ],
+  "entities": [
+    {
+      "name": "humidity",
+      "roles": []
+    },
+    {
+      "name": "km/h",
+      "roles": []
+    },
+    {
+      "name": "precipitation",
+      "roles": []
+    },
+    {
+      "name": "wind",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "percentage",
+      "roles": []
+    },
+    {
+      "name": "temperature",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "i measured a humidity of 30%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 13,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "it has 20 degrees outside temperature.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "it has 20 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "it is cloudy and rainy, the chance of rain is 90%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 28,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "it is cold outside, it has -10 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "it is damp outside, the humidity is 80%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 6,
+          "endPos": 9
+        },
+        {
+          "entity": "humidity",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "it is hot outside, the temperature is 40 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "it is stormy outside, the wind speed is 50 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 6,
+          "endPos": 11
+        },
+        {
+          "entity": "wind",
+          "startPos": 26,
+          "endPos": 35
+        },
+        {
+          "entity": "km/h",
+          "startPos": 40,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "it is very cloudy and is has 10°c outside.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "it is windy outside, the wind velocity is 30 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 6,
+          "endPos": 10
+        },
+        {
+          "entity": "wind",
+          "startPos": 25,
+          "endPos": 37
+        },
+        {
+          "entity": "km/h",
+          "startPos": 42,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "the air is dry, the humidity is 2%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 4,
+          "endPos": 13
+        },
+        {
+          "entity": "humidity",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "the chance of precipitation is 20%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 14,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "the chance of precipitation is high (90 %).",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 14,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "the chance of precipitation is only 10% today.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 4,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "the chance of rain is 50%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 4,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "the highest possible speed of wind for today is 10 km /h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 30,
+          "endPos": 33
+        },
+        {
+          "entity": "km/h",
+          "startPos": 48,
+          "endPos": 55
+        }
+      ]
+    },
+    {
+      "text": "the humidity is 30% today.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 4,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "the humidity is 40%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 4,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "the posibility of precipitation isn't high today, only 5%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 4,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "the probability of precipitation is 10%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 19,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "the sun is shining and is has 30°c.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "the temperature is 30 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "the velocity of wind is 30 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 4,
+          "endPos": 19
+        },
+        {
+          "entity": "km/h",
+          "startPos": 24,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "the weather forecast predicts a humidity of 50%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 32,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "the weather forecast predicts a wind speed of 80km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 32,
+          "endPos": 41
+        },
+        {
+          "entity": "km/h",
+          "startPos": 46,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "the weather forecast says that the chance of hail is 70 % tomorrow.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 35,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "the weather station indicates a wind speed of 30 km / h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 32,
+          "endPos": 41
+        },
+        {
+          "entity": "km/h",
+          "startPos": 46,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "the weather stations measures a humidity of 40 percent.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 32,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "the wind speed is 20 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 4,
+          "endPos": 13
+        },
+        {
+          "entity": "km/h",
+          "startPos": 18,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "the wind velocity is 10 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 4,
+          "endPos": 16
+        },
+        {
+          "entity": "km/h",
+          "startPos": 21,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "today it is rainy, the chance of rain is 80%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 23,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "today it is sunny, there won't be precipitation - the probability is 0%.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 34,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "today the humidity is high (80 percent).",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 10,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "today the humidity is low, the humidity is 10 %.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 10,
+          "endPos": 17
+        },
+        {
+          "entity": "humidity",
+          "startPos": 31,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "today there isn't any wind (0 km/h).",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 22,
+          "endPos": 25
+        },
+        {
+          "entity": "km/h",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "today we have a bad weather, it rains and it has 5 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "today we have a weather like in the desert, the humidity is 3 %.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 48,
+          "endPos": 55
+        }
+      ]
+    },
+    {
+      "text": "today we have about 20 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "today with have a nice weather, the temperature is 30 degrees.",
+      "intent": "Temperature",
+      "entities": []
+    },
+    {
+      "text": "today, the probability of snowfall is 50 %.",
+      "intent": "Precipitation",
+      "entities": [
+        {
+          "entity": "precipitation",
+          "startPos": 11,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "tomorrow the highest possible value of humidity is 10%.",
+      "intent": "Humidity",
+      "entities": [
+        {
+          "entity": "humidity",
+          "startPos": 39,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "tomorrow we won't have any wind, the wind speed is only 5 km/h.",
+      "intent": "Wind",
+      "entities": [
+        {
+          "entity": "wind",
+          "startPos": 27,
+          "endPos": 30
+        },
+        {
+          "entity": "wind",
+          "startPos": 37,
+          "endPos": 46
+        },
+        {
+          "entity": "km/h",
+          "startPos": 56,
+          "endPos": 61
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
